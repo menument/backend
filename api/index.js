@@ -15,7 +15,7 @@ const attributeRoutes = require("../routes/attributeRoutes");
 const settingRoutes = require("../routes/settingRoutes");
 const currencyRoutes = require("../routes/currencyRoutes");
 const languageRoutes = require("../routes/languageRoutes");
-const ingredientRoutes = require("../routes/ingredientRoutes");
+//const ingredientRoutes = require("../routes/ingredientRoutes");
 const { isAuth, isAdmin } = require("../config/auth");
 
 connectDB();
@@ -45,7 +45,7 @@ app.use("/api/category/", categoryRoutes);
 //app.use("/api/setting/", settingRoutes);
 //app.use("/api/currency/", isAuth, currencyRoutes);
 //app.use("/api/language/", languageRoutes);
-app.use("/api/ingredient/", ingredientRoutes);
+//app.use("/api/ingredient/", ingredientRoutes);
 
 //if you not use admin dashboard then these two route will not needed.
 //app.use("/api/admin/", adminRoutes);

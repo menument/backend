@@ -13,7 +13,7 @@ const {
   deleteManyIngredient,
   updateManyIngredient
 
-} = require('../controller/IngredientController');
+} = require('../controller/ingredientController');
 
 //add a Ingredient
 router.post('/add', addIngredient);
